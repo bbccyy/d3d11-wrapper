@@ -23,6 +23,7 @@ void hook_exports()
         chain = LoadLibrary(path.c_str());
         SP_LOG(chain ? "Success\n" : "Failed.\n");
     }
+    chain = LoadLibrary("C:/Windows/System32/d3d11.dll");
     if (!chain)
     {
         SP_LOG("Attempting to load %s from system path... ", filename);
